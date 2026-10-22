@@ -8,3 +8,4 @@ Growth Marketing Intern assessment. **Goal:** 1,200 BitElevate student sign-ups 
 - `strategy-report.md`: growth hypothesis, rationale, tracking plan
 - `banners/`: ad creatives (PNG)
 
+GITHUB-LINK-HERE:- https://krishanmalsaria.github.io/cynbit-growth-campaign/
