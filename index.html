@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cynbit × BitElevate: Growth Campaign</title>
+<style>
+:root{--bg:#fafaf7;--card:#fff;--ink:#16181d;--mute:#5b6270;--line:#e3e5ea;--acc:#5b3df5;--acc2:#12b886;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1115;--card:#171a21;--ink:#eceef3;--mute:#9aa1b0;--line:#2a2f3a;--acc:#8b78ff;--acc2:#3dd6a3;--on:#0f1115;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1115;--card:#171a21;--ink:#eceef3;--mute:#9aa1b0;--line:#2a2f3a;--acc:#8b78ff;--acc2:#3dd6a3;--on:#0f1115;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .w{display:flex;gap:18px;overflow-x:auto;padding:12px 20px;white-space:nowrap;font-size:14px}
+nav a{color:var(--mute);text-decoration:none}nav a:hover{color:var(--acc)}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+h2{font-size:28px;margin-top:0}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+.tag{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:10px}
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(32px,6vw,52px);max-width:720px}
+.hero p{font-size:18px;color:var(--mute);max-width:600px}
+.btn{display:inline-block;background:var(--acc);color:var(--on);border:0;border-radius:10px;padding:12px 22px;font:600 16px inherit;cursor:pointer}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+input[type=email],input[type=text]{flex:1;min-width:200px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{font-size:17px}.card p{margin:0;color:var(--mute);font-size:15px}
+.proof{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px;color:var(--mute);font-size:14px}
+.proof b{display:block;color:var(--ink);font-size:22px}
+.banner{border-radius:16px;padding:28px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;max-width:600px;aspect-ratio:1.91/1;display:flex;flex-direction:column;justify-content:space-between}
+.banner b{font-size:clamp(22px,4vw,32px);line-height:1.15}
+.banner span{font-size:14px;opacity:.95}
+.banner i{align-self:flex-start;font-style:normal;background:#fff;color:#16181d;padding:8px 16px;border-radius:8px;font-weight:700;font-size:14px}
+.sq{max-width:300px;aspect-ratio:1;margin-top:14px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute);font-weight:600}
+code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:13px}
+.note{font-size:13px;color:var(--mute)}
+ul{padding-left:20px}li{margin:4px 0}
+footer{padding:28px 0;color:var(--mute);font-size:13px}
+</style>
+</head>
+<body>
+<nav><div class="w"><a href="#c1">Creative 1: Landing page</a><a href="#c2">Creative 2: Ad banners</a><a href="#plan">Campaign plan</a><a href="#report">Strategy report</a></div></nav>
+
+<div class="w">
+<section class="hero" id="c1">
+<span class="tag">Creative 1 · Landing page for BitElevate</span>
+<h1>Your first tech job shouldn’t depend on who you know.</h1>
+<p>BitElevate by Cynbit turns students into job-ready builders: real projects, mentor feedback and a portfolio recruiters can verify. Join the next cohort before seats fill.</p>
+<div class="row">
+<input type="email" id="em" placeholder="College email" aria-label="College email">
+<button class="btn" id="go">Reserve my seat</button>
+</div>
+<div class="note" id="msg">Nominal fees, limited seats. No spam. One email with your cohort details.</div>
+<div class="proof"><div><b>4 weeks</b>to a shipped project</div><div><b>15+</b>domain tracks</div><div><b>1000+</b>students trained</div></div>
+<div class="grid" style="margin-top:32px">
+<div class="card"><h3>Build, don’t binge-watch</h3><p>Ship a real project every cohort instead of collecting course certificates.</p></div>
+<div class="card"><h3>Get reviewed by practitioners</h3><p>Code and portfolio feedback from people who hire and build for a living.</p></div>
+<div class="card"><h3>Show proof, not promises</h3><p>A public portfolio with commits, demos and a short write-up per project.</p></div>
+</div>
+<div class="row"><button class="btn" id="go2">Start with one free project brief</button></div>
+<p class="note">Variant B headline (A/B test): “Build 1 real project in 4 weeks. Get hired on proof.”</p>
+</section>
+
+<section id="c2">
+<span class="tag">Creative 2 · Ad banners (Meta / Instagram / LinkedIn)</span>
+<h2>Static ad set</h2>
+<div class="banner"><span>BitElevate by Cynbit</span><b>Certificates don’t get interviews. Projects do.</b><i>Apply now →</i></div>
+<div class="banner sq"><span>For 2nd–4th year students</span><b>Ship 1 real project in 4 weeks.</b><i>Join cohort</i></div>
+
+</section>
+
+<section id="plan">
+<span class="tag">Deliverable 2</span>
+<h2>Growth campaign plan</h2>
+<p><b>Objective:</b> 1,200 BitElevate sign-ups in 4 weeks. <b>Audience:</b> engineering and BCA/BSc students, years 2–4, plus early-career job seekers. <b>Paid budget (assumed):</b> ₹40,000, all on Instagram ads; every other channel is organic.</p>
+<h3>Metric goals</h3>
+<div class="tw"><table>
+<tr><th>Metric</th><th>Target</th><th>Why</th></tr>
+<tr><td>Sign-ups (total)</td><td>1,200 (500 paid, 700 organic and referral)</td><td>North-star outcome</td></tr>
+<tr><td>Paid CAC</td><td>≤ ₹80 per sign-up</td><td>₹40,000 ÷ 500</td></tr>
+<tr><td>Blended CAC</td><td>≤ ₹33</td><td>₹40,000 ÷ 1,200</td></tr>
+<tr><td>Ad CTR</td><td>≥ 1.5%</td><td>Creative–audience fit</td></tr>
+<tr><td>Landing page conversion</td><td>≥ 12% (visit → sign-up)</td><td>Offer clarity</td></tr>
+<tr><td>CPC</td><td>≤ ₹10</td><td>500 ÷ 12% ≈ 4,200 clicks</td></tr>
+<tr><td>Referral share</td><td>≥ 15% of sign-ups</td><td>Compounding, lowest CAC</td></tr>
+</table></div>
+<p class="note">Funnel math: 4,200 clicks at 1.5% CTR needs about 280,000 impressions, so a CPM near ₹145. All targets are assumptions to be replaced with Cynbit’s actual baselines.</p>
+<h3>Acquisition channels</h3>
+<div class="tw"><table>
+<tr><th>Channel</th><th>Role</th><th>Sign-up goal</th></tr>
+<tr><td>Instagram ads</td><td>Paid, scaled reach to students</td><td>500</td></tr>
+<tr><td>LinkedIn posts</td><td>Credibility, job-seeker audience</td><td>100</td></tr>
+<tr><td>College clubs and ambassadors</td><td>Trusted distribution, bulk sign-ups</td><td>300</td></tr>
+<tr><td>WhatsApp and Telegram groups</td><td>Free peer-to-peer sharing</td><td>150</td></tr>
+<tr><td>Referral loop</td><td>Invite 3 friends, unlock a free mentor session</td><td>150</td></tr>
+</table></div>
+<h3>Experimentation framework</h3>
+<ul>
+<li><b>Backlog scored by ICE</b> (Impact, Confidence, Ease); run the top test each week.</li>
+<li><b>One variable per test</b>, with the hypothesis, metric and stop rule written before launch.</li>
+<li><b>Weekly cadence:</b> Mon launch, Thu check guardrails, Sun decide: ship, kill or iterate.</li>
+<li><b>Guardrails:</b> CAC no more than 20% above target, unsubscribe rate below 1%.</li>
+</ul>
+<h3>A/B test setup</h3>
+<div class="tw"><table>
+<tr><th>Test</th><th>A (control)</th><th>B (variant)</th><th>Primary metric</th></tr>
+<tr><td>1. Landing headline</td><td>“Your first tech job shouldn’t depend on who you know.”</td><td>“Build 1 real project in 4 weeks. Get hired on proof.”</td><td>Visit → sign-up rate</td></tr>
+<tr><td>2. Ad angle</td><td>Career anxiety</td><td>Projects over certificates</td><td>CTR, then CAC</td></tr>
+<tr><td>3. Form length</td><td>Email only</td><td>Email + college + year</td><td>Sign-up rate, lead quality</td></tr>
+</table></div>
+<p><b>Sample size (test 1):</b> baseline 12%, detect a lift to 15% at 95% confidence, 80% power → about 1,900 visitors per arm. Split traffic 50/50 by random assignment, run at least 7 days to cover weekday effects, and do not stop early on a lucky streak.</p>
+</section>
+
+<section id="report">
+<span class="tag">Deliverable 3</span>
+<h2>Growth strategy report</h2>
+<h3>Growth hypothesis</h3>
+<p>If we position BitElevate around <b>project proof instead of certificates</b> and let students invite peers for a mentor-session reward, then more students will sign up and the cost per sign-up will fall, because students already distrust certificate-only courses, and peer recommendation is the most credible channel in college communities.</p>
+<h3>Rationale</h3>
+<ul>
+<li><b>Pain-led message:</b> the real fear is “I’ll graduate without a job”, so the copy names it and offers a concrete 4-week fix.</li>
+<li><b>Low-friction conversion:</b> free application, one field, one clear action.</li>
+<li><b>Built-in virality:</b> each sign-up gets a unique referral link; rewards are non-cash (mentor time), which protects margin.</li>
+</ul>
+<h3>Metrics tracking plan</h3>
+<div class="tw"><table>
+<tr><th>Stage</th><th>Event</th><th>Tool</th></tr>
+<tr><td>Awareness</td><td>Impressions, reach, CTR</td><td>Meta Ads Manager</td></tr>
+<tr><td>Visit</td><td><code>page_view</code> with UTM params</td><td>GA4</td></tr>
+<tr><td>Interest</td><td><code>scroll_75</code>, <code>cta_click</code></td><td>GA4</td></tr>
+<tr><td>Sign-up</td><td><code>signup_submit</code> (conversion)</td><td>GA4 + form backend</td></tr>
+<tr><td>Activation</td><td>Opens welcome email, books mentor call</td><td>Email tool</td></tr>
+<tr><td>Referral</td><td><code>invite_sent</code>, referred sign-ups</td><td>Unique referral codes</td></tr>
+</table></div>
+<p><b>Attribution:</b> every link carries <code>utm_source / medium / campaign / content</code>; a single sheet joins spend and sign-ups per channel to calculate CAC weekly. <b>Reporting:</b> a Monday dashboard with funnel conversion by channel, CAC trend and test results.</p>
+<h3>Risks and next steps</h3>
+<ul>
+<li>Paid traffic may skew low-intent; mitigate with the optional college and year fields and quality checks on the first 100 leads.</li>
+<li>If CAC exceeds target after week 2, shift budget toward ambassadors and referrals.</li>
+<li>Scale the winning headline and angle into LinkedIn and Google Search in week 4.</li>
+</ul>
+</section>
+
+</div>
+<script>
+(function(){
+var m=document.getElementById('msg');
+function go(){var v=document.getElementById('em').value.trim();
+if(!/^\S+@\S+\.\S+$/.test(v)){m.textContent='Please enter a valid email to reserve your seat.';return;}
+m.textContent='You’re in! Check your inbox for cohort details. (Demo form: nothing is stored.)';}
+document.getElementById('go').addEventListener('click',go);
+document.getElementById('go2').addEventListener('click',function(){document.getElementById('em').focus();window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>
